@@ -1,0 +1,22 @@
+
+<ul>
+  <li>Tamagotchi name: @Model.GetName()</li>
+  <li><a href="@Model.GetIamage()" alt = "Tamagotchi"></a></li>
+  <li>Hunger level: @Model.GetHunger()</li>
+  <li>Bordem level: @Model.GetPlay()</li>
+  <li>Sleepiness: @Model.GetSleep()</li>
+</ul>
+
+<h1>Tamagotchi Interaction</h1>
+<form action="/action" method="post">
+  <button type="click" method="post">Feed</button>
+  <input type="hidden" name="action" value="feed">
+
+  <button type="click" method="post">Play</button>
+  <input type="hidden" name="action" value="play">
+
+  <button type="click" method="post">Sleep</button>
+  <input type="hidden" name="action" value="sleep">
+</form>
+
+<p><a href="/">Create a new Tamagotchi</a></p>

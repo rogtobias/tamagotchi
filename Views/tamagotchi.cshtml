@@ -1,0 +1,10 @@
+<h1>Your Tamagotchi's</h1>
+
+<ul>
+  @foreach(var newTamagotchi in @Model)
+  {
+    <li><a href="/tamagotchi/@newTamagotchi.GetId()">@newTamagotchi.GetName()</a></li>
+  }
+</ul>
+
+<p><a href="/">Create a new Tamagotchi</a></p>
